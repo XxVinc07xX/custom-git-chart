@@ -1,0 +1,39 @@
+.grid-container {
+    display: grid;
+    justify-content: center;
+    column-gap: 2px;
+    grid-template-columns: repeat(52, 15px);
+    background-color:  black;
+    padding: 10px;
+    border: 1px solid white;
+    width: fit-content;
+}
+  
+.grid-item {
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+h1{
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
