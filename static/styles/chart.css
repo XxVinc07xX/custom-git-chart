@@ -52,7 +52,11 @@ body{
 }
 
 button:hover{
-    background-color: gray;
+    scale: 1.1;
+}
+
+.grid-item:hover{
+    background-color: lightgray;
 }
 
 h1{
@@ -71,11 +75,11 @@ h1{
 .frame-color-container{
     display: grid;
     justify-content: center;
-    column-gap: 2px;
+    column-gap: 5px;
     grid-template-columns: repeat(5, 50px);
     background-color:  black;
     padding: 10px;
-    border: 1px solid white;
+    border: 2px solid rgb(128, 255, 0);
     border-radius: 5px;
     width: fit-content;
 }
@@ -86,6 +90,8 @@ h1{
     font-size: 30px;
     text-align: center;
     aspect-ratio: 1 / 1;
+    border: 1px solid rgb(25, 51, 0);
+    border-radius: 5px;
 }
 
 .color2 {
@@ -94,6 +100,8 @@ h1{
     font-size: 30px;
     text-align: center;
     aspect-ratio: 1 / 1;
+    border: 1px solid rgb(51, 102, 0);
+    border-radius: 5px;
 }
 
 .color3 {
@@ -102,6 +110,8 @@ h1{
     font-size: 30px;
     text-align: center;
     aspect-ratio: 1 / 1;
+    border: 1px solid rgb(76, 153, 0);
+    border-radius: 5px;
 }
 
 .color4 {
@@ -110,6 +120,8 @@ h1{
     font-size: 30px;
     text-align: center;
     aspect-ratio: 1 / 1;
+    border: 1px solid rgb(102, 204, 0);
+    border-radius: 5px;
 }
 
 .color5 {
@@ -118,4 +130,6 @@ h1{
     font-size: 30px;
     text-align: center;
     aspect-ratio: 1 / 1;
+    border: 1px solid rgb(128, 255, 0);
+    border-radius: 5px;
 }

@@ -58,7 +58,7 @@
 
 
 <div class="color-container">
-  <div class="frame-color-container">
+  <div class="frame-color-container" id="frame-id">
     <button class="color1"></button>
     <button class="color2"></button>
     <button class="color3"></button>
@@ -66,6 +66,16 @@
     <button class="color5"></button>
   </div>
 </div>
+
+<script>
+  const frame = document.getElementById("frame-id")
+  frame.addEventListener('click',(event) => {
+    if (event.target.tagName === 'BUTTON') {
+      const buttonColor = getComputedStyle(event.target).backgroundColor;
+      frame.style.borderColor = buttonColor
+    }
+  })
+</script>
 
 </body>
 </html>
