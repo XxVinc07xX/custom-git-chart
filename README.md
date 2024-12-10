@@ -1,7 +1,7 @@
 # Custom GitHub activity chart
 
 ## Introduction
-This program is intented to display the same chart as on your GitHub profile. Then you can draw on it with several shade of green (also like on Git).
+This program is intended to display the same chart as on your GitHub profile. Then you can draw on it with several shade of green (also like on Git).
 
 Have fun with it!
 
