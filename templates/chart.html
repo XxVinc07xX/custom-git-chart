@@ -71,6 +71,10 @@
       const curBorderColor = getComputedStyle(frame).borderColor;
       button.style.backgroundColor = curBorderColor;
     });
+    button.addEventListener('contextmenu', () => {
+      event.preventDefault();
+      button.style.backgroundColor = "rgb(64,64,64)";
+    })
   });
 
 </script>
