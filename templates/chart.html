@@ -36,27 +36,6 @@
   </div>
 </div>
 
-<script>
-  const gridContainer = document.getElementById('grid-container');
-  const totalButtons = 364;
-
-  for (let i = 0; i < totalButtons; i++) {
-    const button = document.createElement('button');
-    button.classList.add('grid-item');
-    gridContainer.appendChild(button);
-  }
-
-  const buttons = document.querySelectorAll('.grid-item');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      button.style.backgroundColor = "green";
-    });
-  });
-
-</script>
-
-
 <div class="color-container">
   <div class="frame-color-container" id="frame-id">
     <button class="color1"></button>
@@ -68,6 +47,15 @@
 </div>
 
 <script>
+  const gridContainer = document.getElementById('grid-container');
+  const totalButtons = 364;
+
+  for (let i = 0; i < totalButtons; i++) {
+    const button = document.createElement('button');
+    button.classList.add('grid-item');
+    gridContainer.appendChild(button);
+  }
+
   const frame = document.getElementById("frame-id")
   frame.addEventListener('click',(event) => {
     if (event.target.tagName === 'BUTTON') {
@@ -75,6 +63,16 @@
       frame.style.borderColor = buttonColor
     }
   })
+
+  const buttons = document.querySelectorAll('.grid-item');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const curBorderColor = getComputedStyle(frame).borderColor;
+      button.style.backgroundColor = curBorderColor;
+    });
+  });
+
 </script>
 
 </body>
