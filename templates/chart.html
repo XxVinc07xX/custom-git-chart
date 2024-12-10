@@ -38,14 +38,24 @@
 
 <script>
   const gridContainer = document.getElementById('grid-container');
-  const totalButtons = 364; // Number of days in the year (or adjust as needed)
-  
+  const totalButtons = 364;
+
   for (let i = 0; i < totalButtons; i++) {
     const button = document.createElement('button');
     button.classList.add('grid-item');
     gridContainer.appendChild(button);
   }
+
+  const buttons = document.querySelectorAll('.grid-item');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.style.backgroundColor = "green";
+    });
+  });
+
 </script>
+
 
 <div class="color-container">
   <div class="frame-color-container">
