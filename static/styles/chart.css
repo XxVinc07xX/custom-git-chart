@@ -6,6 +6,7 @@
     background-color:  black;
     padding: 10px;
     border: 1px solid white;
+    border-radius: 5px;
     width: fit-content;
 }
   
@@ -36,4 +37,63 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.color-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-color-container{
+    display: grid;
+    justify-content: center;
+    column-gap: 2px;
+    grid-template-columns: repeat(5, 50px);
+    background-color:  black;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.color1 {
+    background-color: rgb(25, 51, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.color2 {
+    background-color: rgb(51, 102, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.color3 {
+    background-color: rgb(76, 153, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.color4 {
+    background-color: rgb(102, 204, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.color5 {
+    background-color: rgb(128, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
 }
